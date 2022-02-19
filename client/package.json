@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "serve -s build",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "axios": "^0.25.0",
